@@ -21,6 +21,10 @@
   --color-text-gray: var(--mosaic-color-text-gray);
   --color-border-default: var(--mosaic-color-border-default);
   --color-accent: var(--mosaic-color-accent);
+  --color-danger: var(--mosaic-color-danger);
+  --color-danger-foreground: var(--mosaic-color-danger-foreground);
+  --color-danger-hover: var(--mosaic-color-danger-hover);
+  --color-danger-active: var(--mosaic-color-danger-active);
   --color-surface-soft: var(--mosaic-color-surface-soft);
   --color-surface-strong: var(--mosaic-color-surface-strong);
   --radius-card: var(--mosaic-radius-card);

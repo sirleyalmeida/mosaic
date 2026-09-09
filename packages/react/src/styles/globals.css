@@ -1,4 +1,5 @@
 @import "@mosaic/tokens/css";
+@import "@mosaic/tokens/css/light";
 @import "tailwindcss";
 
 @theme inline {

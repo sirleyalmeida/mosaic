@@ -1,0 +1,21 @@
+{
+  "name": "@mosaic/tokens",
+  "version": "1.0.0",
+  "description": "Generated design tokens for Mosaic",
+  "type": "module",
+  "main": "./dist/json/tokens.json",
+  "exports": {
+    "./css": "./dist/css/variables.css",
+    "./json": "./dist/json/tokens.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node style-dictionary.config.mjs"
+  },
+  "devDependencies": {
+    "style-dictionary": "^5.5.3",
+    "typescript": "^7.0.2"
+  }
+}

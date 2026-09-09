@@ -1,0 +1,20 @@
+@import "@mosaic/tokens/css";
+@import "tailwindcss";
+
+@theme inline {
+	--color-bg-primary: var(--mosaic-color-bg-primary);
+	--color-bg-secondary: var(--mosaic-color-bg-secondary);
+	--color-bg-light: var(--mosaic-color-bg-light);
+	--color-bg-card: var(--mosaic-color-bg-card);
+	--color-text-primary: var(--mosaic-color-text-primary);
+	--color-text-secondary: var(--mosaic-color-text-secondary);
+	--color-text-tertiary: var(--mosaic-color-text-tertiary);
+	--color-text-gray: var(--mosaic-color-text-gray);
+	--color-border-default: var(--mosaic-color-border-default);
+	--color-accent: var(--mosaic-color-accent);
+	--color-surface-soft: var(--mosaic-color-surface-soft);
+	--color-surface-strong: var(--mosaic-color-surface-strong);
+	--radius-card: var(--mosaic-radius-card);
+	--spacing-gap-grid: var(--mosaic-space-gap-grid);
+	--spacing-gap-card: var(--mosaic-space-gap-card);
+}

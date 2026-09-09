@@ -6,7 +6,7 @@ import { Modal } from './Modal';
 
 expect.extend(toHaveNoViolations);
 
-describe('Modal', () => {
+describe('Component / <Modal />', () => {
   it('renders its title and description when open', () => {
     render(
       <Modal isOpen onClose={vi.fn()} title="Account settings">

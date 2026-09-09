@@ -53,3 +53,7 @@ Thumbs.db
 .stylelintcache
 .turbo/
 .cache/
+
+# Playwright visual regression output
+test-results/
+playwright-report/

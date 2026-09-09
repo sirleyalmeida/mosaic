@@ -6,6 +6,7 @@
   "main": "./dist/json/tokens.json",
   "exports": {
     "./css": "./dist/css/variables.css",
+    "./css/light": "./dist/css/theme-light.css",
     "./json": "./dist/json/tokens.json"
   },
   "files": [

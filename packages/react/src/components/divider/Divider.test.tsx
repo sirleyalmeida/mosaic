@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 import { Divider } from './Divider';
 
-describe('Divider Component', () => {
+describe('Component / <Divider />', () => {
   it('renders decorative horizontal divider by default without accessibility roles', () => {
     const { container } = render(<Divider />);
     

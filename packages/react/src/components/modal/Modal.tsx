@@ -13,7 +13,7 @@ export const Modal = ({ isOpen, onClose, title, children, icon }: ModalProps) =>
   <Dialog.Root open={isOpen} onOpenChange={onClose}>
     <Dialog.Portal>
       <Dialog.Overlay className="fixed inset-0 bg-[var(--shadow-soft,#090712)]/80 backdrop-blur-sm data-[state=open]:animate-fadeIn" />
-      <Dialog.Content className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-bg-card border border-border-default text-text-primary p-gap-card rounded-card shadow-xl w-full max-w-md focus:outline-none">
+      <Dialog.Content className="fixed top-1/2 start-1/2 -translate-x-1/2 -translate-y-1/2 bg-bg-card border border-border-default text-text-primary p-gap-card rounded-card shadow-xl w-full max-w-md focus:outline-none">
         <Dialog.Title className="text-xl font-semibold text-text-primary">
           {title}
         </Dialog.Title> 
@@ -24,7 +24,7 @@ export const Modal = ({ isOpen, onClose, title, children, icon }: ModalProps) =>
         </Dialog.Description>
         <Dialog.Close 
           aria-label="Fechar" 
-          className="absolute top-4 right-4 text-text-tertiary hover:text-accent focus:text-accent rounded-sm transition-colors focus:outline-none"
+          className="absolute top-4 end-4 text-text-tertiary hover:text-accent focus:text-accent rounded-sm transition-colors focus:outline-none"
         >
           {icon || (
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">

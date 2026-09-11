@@ -25,3 +25,5 @@ export {
 	applyMosaicTheme,
 	type MosaicThemeTokens,
 } from './components/theme';
+export { MosaicProvider } from './providers/MosaicProvider';
+export type { MosaicProviderProps } from './providers/MosaicProvider';

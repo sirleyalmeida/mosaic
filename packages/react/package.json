@@ -1,28 +1,37 @@
 {
   "name": "@mosaic/react",
   "version": "1.0.0",
-  "description": "",
+  "description": "Enterprise UI component library built for Mosaic Design System",
+  "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
-    }
+    },
+    "./styles.css": "./src/styles.css"
   },
-  "files": [
-    "dist"
-  ],
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
+  "keywords": [
+    "design-system",
+    "react",
+    "tailwind",
+    "radix-ui",
+    "components"
+  ],
+  "author": "Sirley Almeida",
+  "license": "MIT",
   "dependencies": {
     "@mosaic/tokens": "workspace:*",
     "@radix-ui/react-dialog": "^1.1.23",
@@ -34,13 +43,17 @@
     "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {
-    "@storybook/react": "^10.6.0",
-    "@storybook/test": "^8.6.15",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^14.6.1",
     "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.0.4",
+    "jsdom": "^26.0.0",
     "postcss": "^8.5.28",
     "tailwindcss": "^4.3.3",
     "tsup": "^8.5.1",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
   },
   "peerDependencies": {
     "react": "^19.0.0",

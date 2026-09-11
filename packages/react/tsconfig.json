@@ -4,5 +4,6 @@
     "jsx": "react-jsx",
     "moduleResolution": "bundler"
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.stories.tsx"]
 }

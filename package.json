@@ -1,19 +1,12 @@
 {
   "name": "mosaic",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "storybook": "pnpm --filter @mosaic/storybook storybook",
-    "visual:build": "pnpm --filter @mosaic/tokens build && pnpm --filter @mosaic/storybook build-storybook",
-    "visual:test": "playwright test",
-    "visual:update": "playwright test --update-snapshots",
-    "test": "vitest run",
-    "typecheck": "tsc --noEmit"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "Open source React Design System Monorepo",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": "Sirley Almeida",
+  "packageManager": "pnpm@12.3.4",
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
@@ -21,14 +14,26 @@
       "onFail": "download"
     }
   },
-  "packageManager": "pnpm@12.3.4",
-  "type": "module",
+  "scripts": {
+    "dev": "pnpm storybook",
+    "storybook": "pnpm --filter @mosaic/storybook storybook",
+    "build": "pnpm --filter \"@mosaic/*\" build",
+    "build:tokens": "pnpm --filter @mosaic/tokens build",
+    "build:react": "pnpm --filter @mosaic/react build",
+    "visual:build": "pnpm build:tokens && pnpm --filter @mosaic/storybook build-storybook",
+    "visual:test": "playwright test",
+    "visual:update": "playwright test --update-snapshots",
+    "test": "vitest run",
+    "test:watch": "pnpm --filter @mosaic/react test:watch",
+    "typecheck": "pnpm --filter \"@mosaic/*\" exec tsc --noEmit"
+  },
   "devDependencies": {
     "@playwright/test": "^1.55.0",
     "@testing-library/jest-dom": "^6.8.0",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
     "@types/jest-axe": "^3.5.9",
+    "@types/node": "^22.0.0",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "axe-core": "^4.11.0",

@@ -14,5 +14,5 @@
     "src/**/*",
     ".storybook/**/*",
     "../../packages/react/src/**/*"
-  ]
+  ],
 }

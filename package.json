@@ -25,9 +25,14 @@
     "visual:update": "playwright test --update-snapshots",
     "test": "vitest run",
     "test:watch": "pnpm --filter @mosaic/react test:watch",
-    "typecheck": "pnpm --filter \"@mosaic/*\" exec tsc --noEmit"
+    "typecheck": "pnpm --filter \"@mosaic/*\" exec tsc --noEmit",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build && changeset publish"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^1.0.1",
+    "@changesets/cli": "^3.0.2",
     "@playwright/test": "^1.55.0",
     "@testing-library/jest-dom": "^6.8.0",
     "@testing-library/react": "^16.3.0",

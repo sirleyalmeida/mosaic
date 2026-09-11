@@ -11,6 +11,17 @@ export type { SkeletonProps } from './components/skeleton/Skeleton';
 export { Spinner } from './components/spinner/Spinner';
 export type { SpinnerProps } from './components/spinner/Spinner';
 export {
+	Card,
+} from './components/card/Card';
+export type {
+	CardProps,
+	CardHeaderProps,
+	CardTitleProps,
+	CardDescriptionProps,
+	CardBodyProps,
+	CardFooterProps,
+} from './components/card/Card';
+export {
 	applyMosaicTheme,
 	type MosaicThemeTokens,
 } from './components/theme';

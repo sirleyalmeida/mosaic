@@ -23,7 +23,7 @@
     "visual:build": "pnpm build:tokens && pnpm --filter @mosaic/storybook build-storybook",
     "visual:test": "playwright test",
     "visual:update": "playwright test --update-snapshots",
-    "test": "pnpm --filter \"@mosaic/*\" test",
+    "test": "vitest run",
     "test:watch": "pnpm --filter @mosaic/react test:watch",
     "typecheck": "pnpm --filter \"@mosaic/*\" exec tsc --noEmit"
   },

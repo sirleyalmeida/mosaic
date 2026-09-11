@@ -4,7 +4,11 @@
     "jsx": "react-jsx",
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
-    "types": ["node"]
+    "types": ["node", "react", "react-dom"],
+    "paths": {
+      "@mosaic/react": ["../../packages/react/src/index.ts"],
+      "@mosaic/react/*": ["../../packages/react/src/*"]
+    }
   },
   "include": [
     "src/**/*",

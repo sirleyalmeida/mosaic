@@ -25,6 +25,18 @@ const config: StorybookConfig = {
       path.resolve(__dirname, '../'),
       path.resolve(__dirname, '../../../packages'),
     ];
+    config.resolve = config.resolve || {};
+    config.resolve.alias = {
+      ...(config.resolve.alias || {}),
+      '@mosaic/react': path.resolve(__dirname, '../../../packages/react/src/index.ts'),
+    };
+    config.optimizeDeps = config.optimizeDeps || {};
+    config.optimizeDeps.include = [
+      ...(config.optimizeDeps.include || []),
+      '@radix-ui/react-slot',
+      '@radix-ui/react-direction',
+      '@radix-ui/react-separator',
+    ];
 
     return config;
   },

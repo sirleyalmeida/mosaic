@@ -17,15 +17,15 @@
   "scripts": {
     "dev": "pnpm storybook",
     "storybook": "pnpm --filter @mosaic/storybook storybook",
-    "build": "pnpm --filter \"@mosaic/*\" build",
-    "build:tokens": "pnpm --filter @mosaic/tokens build",
-    "build:react": "pnpm --filter @mosaic/react build",
+    "build": "pnpm --filter \"@mosaic-ds/*\" build",
+    "build:tokens": "pnpm --filter @mosaic-ds/tokens build",
+    "build:react": "pnpm --filter @mosaic-ds/react build",
     "visual:build": "pnpm build:tokens && pnpm --filter @mosaic/storybook build-storybook",
     "visual:test": "playwright test",
     "visual:update": "playwright test --update-snapshots",
     "test": "vitest run",
-    "test:watch": "pnpm --filter @mosaic/react test:watch",
-    "typecheck": "pnpm --filter \"@mosaic/*\" exec tsc --noEmit",
+    "test:watch": "pnpm --filter @mosaic-ds/react test:watch",
+    "typecheck": "pnpm --filter \"@mosaic-ds/*\" exec tsc --noEmit",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "pnpm build && changeset publish"
@@ -46,10 +46,5 @@
     "jsdom": "^26.1.0",
     "typescript": "^5.7.3",
     "vitest": "^3.2.4"
-  },
-  "pnpm": {
-    "overrides": {
-      "vite": "^5.4.21"
-    }
   }
 }

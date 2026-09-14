@@ -28,7 +28,7 @@ const config: StorybookConfig = {
     config.resolve = config.resolve || {};
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
-      '@mosaic/react': path.resolve(__dirname, '../../../packages/react/src/index.ts'),
+      '@mosaic-ds/react': path.resolve(__dirname, '../../../packages/react/src/index.ts'),
     };
     config.optimizeDeps = config.optimizeDeps || {};
     config.optimizeDeps.include = [

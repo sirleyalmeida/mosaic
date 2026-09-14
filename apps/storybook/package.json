@@ -2,8 +2,8 @@
   "name": "@mosaic/storybook",
   "private": true,
   "scripts": {
-    "storybook": "pnpm --filter @mosaic/tokens build && storybook dev -c .storybook -p 6006",
-    "build-storybook": "pnpm --filter @mosaic/tokens build && storybook build -c .storybook"
+    "storybook": "pnpm --filter @mosaic-ds/tokens build && storybook dev -c .storybook -p 6006",
+    "build-storybook": "pnpm --filter @mosaic-ds/tokens build && storybook build -c .storybook"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^8.0.0",

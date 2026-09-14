@@ -6,8 +6,8 @@
     "allowSyntheticDefaultImports": true,
     "types": ["node", "react", "react-dom"],
     "paths": {
-      "@mosaic/react": ["../../packages/react/src/index.ts"],
-      "@mosaic/react/*": ["../../packages/react/src/*"]
+      "@mosaic-ds/react": ["../../packages/react/src/index.ts"],
+      "@mosaic-ds/react/*": ["../../packages/react/src/*"]
     }
   },
   "include": [

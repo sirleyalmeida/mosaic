@@ -31,6 +31,7 @@ jobs:
 
       - name: Verify npm authentication
         run: npm whoami --registry=https://registry.npmjs.org
+        working-directory: /tmp
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 

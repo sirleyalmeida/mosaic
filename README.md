@@ -12,7 +12,7 @@ Mosaic is an open source React design system built around accessible primitives,
 
 The library currently includes:
 
-- `@mosaic-ds/react`: React components such as `Button` and `Modal`.
+- `@mosaic-ds/react`: Typed React components such as `Button`, `Card`, `Modal`, `Tag`, `Divider`, `Skeleton`, and `Spinner`.
 - `@mosaic-ds/tokens`: Style Dictionary source tokens with generated CSS and JSON artifacts.
 - Storybook: component documentation, controls, interaction stories, and light/dark previews.
 - Automated tests: Vitest, React Testing Library, `jest-axe`, and Playwright screenshots.
@@ -50,7 +50,7 @@ mosaic/
 
 ### Prerequisites
 
-- Node.js 22 or newer
+- Node.js 22.14.0 or newer
 - pnpm 12.3.4
 
 Install dependencies:
@@ -75,9 +75,17 @@ The Storybook package builds the token artifacts before starting, so changes in 
 
 ## Component usage
 
-The public React package exports `Button`, `Modal`, `applyMosaicTheme`, and their related types.
+Install the published packages in an application with:
+
+```bash
+npm install @mosaic-ds/react @mosaic-ds/tokens react react-dom
+```
+
+The public React package exports `Button`, `Card`, `Modal`, `Tag`, `Divider`, `Skeleton`, `Spinner`, `MosaicProvider`, `applyMosaicTheme`, and their related types.
 
 ```tsx
+import '@mosaic-ds/react/styles.css';
+
 import { useState } from 'react';
 import { Button, Modal } from '@mosaic-ds/react';
 
@@ -118,11 +126,17 @@ Build the token artifacts explicitly when working with the token package:
 pnpm --filter @mosaic-ds/tokens build
 ```
 
-Generated files are ignored because they are build artifacts. Consumers should build or publish `@mosaic-ds/tokens` before importing its CSS exports:
+Install `@mosaic-ds/tokens` from npm before importing its CSS exports:
 
 ```css
 @import "@mosaic-ds/tokens/css";
 @import "@mosaic-ds/tokens/css/light";
+```
+
+When contributing to this repository, regenerate the token artifacts with:
+
+```bash
+pnpm --filter @mosaic-ds/tokens build
 ```
 
 The generated variables use names such as:

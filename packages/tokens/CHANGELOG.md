@@ -1,5 +1,11 @@
 # @mosaic-ds/tokens
 
+## 1.0.1
+
+### Patch Changes
+
+- [#23](https://github.com/sirleyalmeida/mosaic/pull/23) [`de300e1`](https://github.com/sirleyalmeida/mosaic/commit/de300e199e5b11c7695ffb2d697c9bd05902167b) Thanks [@sirleyalmeida](https://github.com/sirleyalmeida)! - Adds documentation to packages
+
 ## 1.0.0
 
 ### Major Changes

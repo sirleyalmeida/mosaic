@@ -12,8 +12,8 @@ Mosaic is an open source React design system built around accessible primitives,
 
 The library currently includes:
 
-- `@mosaic/react`: React components such as `Button` and `Modal`.
-- `@mosaic/tokens`: Style Dictionary source tokens with generated CSS and JSON artifacts.
+- `@mosaic-ds/react`: React components such as `Button` and `Modal`.
+- `@mosaic-ds/tokens`: Style Dictionary source tokens with generated CSS and JSON artifacts.
 - Storybook: component documentation, controls, interaction stories, and light/dark previews.
 - Automated tests: Vitest, React Testing Library, `jest-axe`, and Playwright screenshots.
 
@@ -26,8 +26,8 @@ mosaic/
 ├── apps/
 │   └── storybook/       # Component playground and documentation
 ├── packages/
-│   ├── react/           # @mosaic/react component library
-│   └── tokens/          # @mosaic/tokens and Style Dictionary pipeline
+│   ├── react/           # @mosaic-ds/react component library
+│   └── tokens/          # @mosaic-ds/tokens and Style Dictionary pipeline
 ├── tests/
 │   └── visual/          # Playwright visual regression tests
 └── .github/workflows/   # CI workflows
@@ -79,7 +79,7 @@ The public React package exports `Button`, `Modal`, `applyMosaicTheme`, and thei
 
 ```tsx
 import { useState } from 'react';
-import { Button, Modal } from '@mosaic/react';
+import { Button, Modal } from '@mosaic-ds/react';
 
 export function UserProfile() {
   const [isOpen, setIsOpen] = useState(false);
@@ -115,14 +115,14 @@ The source of truth is [`packages/tokens/src/tokens.json`](packages/tokens/src/t
 Build the token artifacts explicitly when working with the token package:
 
 ```bash
-pnpm --filter @mosaic/tokens build
+pnpm --filter @mosaic-ds/tokens build
 ```
 
-Generated files are ignored because they are build artifacts. Consumers should build or publish `@mosaic/tokens` before importing its CSS exports:
+Generated files are ignored because they are build artifacts. Consumers should build or publish `@mosaic-ds/tokens` before importing its CSS exports:
 
 ```css
-@import "@mosaic/tokens/css";
-@import "@mosaic/tokens/css/light";
+@import "@mosaic-ds/tokens/css";
+@import "@mosaic-ds/tokens/css/light";
 ```
 
 The generated variables use names such as:
@@ -142,7 +142,7 @@ The generated variables use names such as:
 Runtime overrides are available through the public theme API:
 
 ```tsx
-import { applyMosaicTheme } from '@mosaic/react';
+import { applyMosaicTheme } from '@mosaic-ds/react';
 
 applyMosaicTheme({
   accent: '#10b981',
@@ -160,8 +160,8 @@ Run the standard checks from the repository root:
 ```bash
 pnpm typecheck
 pnpm test
-pnpm --filter @mosaic/tokens build
-pnpm --filter @mosaic/react build
+pnpm --filter @mosaic-ds/tokens build
+pnpm --filter @mosaic-ds/react build
 ```
 
 The test suite covers component behavior, keyboard interaction, loading and `asChild` states, and axe accessibility assertions.

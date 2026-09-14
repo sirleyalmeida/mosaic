@@ -51,7 +51,7 @@ jobs:
       - name: Run Unit Tests (Vitest)
         run: pnpm test
 
-      - name: Build Packages (@mosaic/tokens & @mosaic/react)
+      - name: Build Packages (@mosaic-ds/tokens & @mosaic-ds/react)
         run: pnpm build
 
       - name: Build Storybook Static

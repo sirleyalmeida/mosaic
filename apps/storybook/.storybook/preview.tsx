@@ -1,5 +1,5 @@
 import type { Decorator, Preview } from '@storybook/react';
-import { MosaicProvider } from '@mosaic/react';
+import { MosaicProvider } from '@mosaic-ds/react';
 import '../src/globals.css';
 
 const themeDecorator: Decorator = (Story, context) => {

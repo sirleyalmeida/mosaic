@@ -4,7 +4,11 @@
   "publishConfig": {
     "access": "public"
   },
-  "description": "Enterprise UI component library built for Mosaic Design System",
+  "description": "UI component library built for Mosaic Design System",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirleyalmeida/mosaic.git"
+  },
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",

@@ -5,6 +5,10 @@
     "access": "public"
   },
   "description": "Generated design tokens for Mosaic",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirleyalmeida/mosaic.git"
+  },
   "type": "module",
   "main": "./dist/json/tokens.json",
   "exports": {

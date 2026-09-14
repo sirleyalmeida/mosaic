@@ -1,5 +1,11 @@
 # @mosaic-ds/tokens
 
+## 2.0.0
+
+### Major Changes
+
+- [#21](https://github.com/sirleyalmeida/mosaic/pull/21) [`2f1abec`](https://github.com/sirleyalmeida/mosaic/commit/2f1abec3a7c1feac0c1598058e0871b5f6c3e214) Thanks [@sirleyalmeida](https://github.com/sirleyalmeida)! - Initial release of Mosaic Design System v1.0.0
+
 ## 1.0.1
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @mosaic-ds/react
 
+## 1.0.2
+
+### Patch Changes
+
+- [#25](https://github.com/sirleyalmeida/mosaic/pull/25) [`fdf296b`](https://github.com/sirleyalmeida/mosaic/commit/fdf296b917c8164e706ac8e24a6d9a2b6fbe44d0) Thanks [@sirleyalmeida](https://github.com/sirleyalmeida)! - Adds trusted publishing
+- Updated dependencies [[`fdf296b`](https://github.com/sirleyalmeida/mosaic/commit/fdf296b917c8164e706ac8e24a6d9a2b6fbe44d0)]:
+  - @mosaic-ds/tokens@1.0.2
+
 ## 1.0.1
 
 ### Patch Changes

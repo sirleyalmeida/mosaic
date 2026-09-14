@@ -7,7 +7,7 @@
   "description": "UI component library built for Mosaic Design System",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sirleyalmeida/mosaic.git"
+    "url": "git+https://github.com/sirleyalmeida/mosaic.git"
   },
   "type": "module",
   "main": "./dist/index.cjs",

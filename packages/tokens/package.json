@@ -1,6 +1,9 @@
 {
   "name": "@mosaic/tokens",
   "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Generated design tokens for Mosaic",
   "type": "module",
   "main": "./dist/json/tokens.json",

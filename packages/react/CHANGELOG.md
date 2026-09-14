@@ -1,6 +1,6 @@
 # @mosaic-ds/react
 
-## 2.0.0
+## 1.0.0
 
 ### Major Changes
 
@@ -11,7 +11,7 @@
 - Updated dependencies [[`2f1abec`](https://github.com/sirleyalmeida/mosaic/commit/2f1abec3a7c1feac0c1598058e0871b5f6c3e214)]:
   - @mosaic-ds/tokens@2.0.0
 
-## 1.0.1
+## 0.0.1
 
 ### Patch Changes
 

@@ -1,5 +1,11 @@
 # @mosaic-ds/react
 
+## 1.0.4
+
+### Patch Changes
+
+- [#30](https://github.com/sirleyalmeida/mosaic/pull/30) [`2223f5b`](https://github.com/sirleyalmeida/mosaic/commit/2223f5bb8957166bca56279dbd403f913514f9ae) Thanks [@sirleyalmeida](https://github.com/sirleyalmeida)! - fix: republishing react package for v1.0.3 sync
+
 ## 1.0.3
 
 ### Patch Changes

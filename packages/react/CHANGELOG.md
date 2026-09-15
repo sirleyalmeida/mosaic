@@ -4,6 +4,8 @@
 
 ### Patch Changes
 
+- [#30](https://github.com/sirleyalmeida/mosaic/pull/30) [`2223f5b`](https://github.com/sirleyalmeida/mosaic/commit/2223f5bb8957166bca56279dbd403f913514f9ae) Thanks [@sirleyalmeida](https://github.com/sirleyalmeida)! - fix: republishing react package for v1.0.3 sync
+
 - [#27](https://github.com/sirleyalmeida/mosaic/pull/27) [`0fb423e`](https://github.com/sirleyalmeida/mosaic/commit/0fb423e6e699b1dbd3837b8e3d27d926432f5ad8) Thanks [@sirleyalmeida](https://github.com/sirleyalmeida)! - Adds turbo package
 - Updated dependencies [[`0fb423e`](https://github.com/sirleyalmeida/mosaic/commit/0fb423e6e699b1dbd3837b8e3d27d926432f5ad8)]:
   - @mosaic-ds/tokens@1.0.3

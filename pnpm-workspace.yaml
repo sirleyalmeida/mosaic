@@ -3,5 +3,7 @@ packages:
   - 'apps/*'
 allowBuilds:
   esbuild: false
+minimumReleaseAgeExclude:
+  - '@mosaic-ds/tokens@1.0.2'
 overrides:
   vite: ^5.4.21

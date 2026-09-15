@@ -17,15 +17,15 @@
   "scripts": {
     "dev": "pnpm storybook",
     "storybook": "pnpm --filter @mosaic/storybook storybook",
-    "build": "pnpm --filter \"@mosaic-ds/*\" build",
+    "build": "turbo run build",
     "build:tokens": "pnpm --filter @mosaic-ds/tokens build",
     "build:react": "pnpm --filter @mosaic-ds/react build",
     "visual:build": "pnpm build:tokens && pnpm --filter @mosaic/storybook build-storybook",
     "visual:test": "playwright test",
     "visual:update": "playwright test --update-snapshots",
-    "test": "vitest run",
+    "test": "turbo run test",
     "test:watch": "pnpm --filter @mosaic-ds/react test:watch",
-    "typecheck": "pnpm --filter \"@mosaic-ds/*\" exec tsc --noEmit",
+    "typecheck": "turbo run typecheck",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "pnpm build && changeset publish"
@@ -44,6 +44,7 @@
     "axe-core": "^4.11.0",
     "jest-axe": "^10.0.0",
     "jsdom": "^26.1.0",
+    "turbo": "^2.10.12",
     "typescript": "^5.7.3",
     "vitest": "^3.2.4"
   }

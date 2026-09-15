@@ -2,8 +2,7 @@
   "name": "@mosaic-ds/react",
   "version": "1.0.3",
   "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com"
+    "access": "public"
   },
   "description": "UI component library built for Mosaic Design System",
   "repository": {

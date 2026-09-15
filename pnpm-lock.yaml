@@ -203,8 +203,8 @@ importers:
   packages/react:
     dependencies:
       '@mosaic-ds/tokens':
-        specifier: ^1.0.2
-        version: 1.0.2
+        specifier: workspace:*
+        version: link:../tokens
       '@radix-ui/react-dialog':
         specifier: ^1.1.23
         version: 1.1.23(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -1119,9 +1119,6 @@ packages:
     peerDependencies:
       '@types/react': '>=16'
       react: '>=16'
-
-  '@mosaic-ds/tokens@1.0.2':
-    resolution: {integrity: sha512-AISltzXNgsjUqdaPbnpg+jjTWuNk0ivGjOqgnuo0HKVyfB3orR81Ma0Vjo7X9XrpOgM4uagTdpY2xuOUyjcvNw==}
 
   '@napi-rs/lzma-linux-x64-gnu@1.5.1':
     resolution: {integrity: sha512-oTXEIha4SsuXdTA4Iyskj0kpdx2yVXdhd75c2v3xGrHFfVMsbhTPZU/nMPL4sWKo4pBHm3aucLaqGlF696dTyQ==}
@@ -4271,8 +4268,6 @@ snapshots:
       '@types/mdx': 2.0.14
       '@types/react': 19.3.0
       react: 19.2.8
-
-  '@mosaic-ds/tokens@1.0.2': {}
 
   '@napi-rs/lzma-linux-x64-gnu@1.5.1':
     optional: true

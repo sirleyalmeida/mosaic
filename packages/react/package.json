@@ -1,6 +1,6 @@
 {
   "name": "@mosaic-ds/react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publishConfig": {
     "access": "public",
     "registry": "https://npm.pkg.github.com"
@@ -43,7 +43,7 @@
   "author": "Sirley Almeida",
   "license": "MIT",
   "dependencies": {
-    "@mosaic-ds/tokens": "^1.0.2",
+    "@mosaic-ds/tokens": "^1.0.3",
     "@radix-ui/react-dialog": "^1.1.23",
     "@radix-ui/react-direction": "^1.1.4",
     "@radix-ui/react-separator": "^1.1.15",

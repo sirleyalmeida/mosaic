@@ -28,7 +28,9 @@
     "typecheck": "turbo run typecheck",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "pnpm build && changeset publish"
+    "release": "pnpm build && changeset publish",
+    "ci": "pnpm typecheck && pnpm test && pnpm build && pnpm visual:build"
+
   },
   "devDependencies": {
     "@changesets/changelog-github": "^1.0.1",

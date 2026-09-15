@@ -30,7 +30,8 @@
     "build": "tsup && cp src/styles/globals.css dist/styles.css",
     "dev": "tsup --watch",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [
     "design-system",

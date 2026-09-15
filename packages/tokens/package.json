@@ -22,7 +22,8 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "build": "node style-dictionary.config.mjs"
+    "build": "node style-dictionary.config.mjs",
+    "typecheck": "echo 'No typecheck needed for tokens'"
   },
   "devDependencies": {
     "style-dictionary": "^5.5.3",

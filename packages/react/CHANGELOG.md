@@ -1,5 +1,13 @@
 # @mosaic-ds/react
 
+## 1.0.3
+
+### Patch Changes
+
+- [#27](https://github.com/sirleyalmeida/mosaic/pull/27) [`0fb423e`](https://github.com/sirleyalmeida/mosaic/commit/0fb423e6e699b1dbd3837b8e3d27d926432f5ad8) Thanks [@sirleyalmeida](https://github.com/sirleyalmeida)! - Adds turbo package
+- Updated dependencies [[`0fb423e`](https://github.com/sirleyalmeida/mosaic/commit/0fb423e6e699b1dbd3837b8e3d27d926432f5ad8)]:
+  - @mosaic-ds/tokens@1.0.3
+
 ## 1.0.2
 
 ### Patch Changes

@@ -36,6 +36,9 @@ jobs:
           version: 12.3.4
           run_install: false
 
+      - name: Setup Turborepo Cache
+        uses: dtinth/setup-github-actions-caching-for-turbo@v1
+
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
